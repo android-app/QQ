@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="6.0dip"
+    android:paddingTop="6.0dip" 
+    android:background="@drawable/list_group_item_background">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10.0dip"
+        android:src="@drawable/ic_launcher"
+        android:contentDescription="@string/app_name" 
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/stateicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/icon"
+        android:layout_alignRight="@id/icon" 
+        android:src="@drawable/status_online"
+        android:contentDescription="@string/app_name"/>
+
+    <TextView
+        android:id="@+id/contact_list_item_name"
+        android:layout_width="fill_parent"
+        android:layout_height="25.0dip"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="18.0dip"
+        android:layout_toRightOf="@id/icon"
+        android:drawableRight="@drawable/terminal_icon_ios"
+        android:ellipsize="end"
+        android:gravity="left|center"
+        android:includeFontPadding="false"
+        android:padding="0.0dip"
+        android:singleLine="true"
+        android:textSize="16.0sp" />
+
+    <TextView
+        android:id="@+id/cpntact_list_item_state"
+        android:layout_width="fill_parent"
+        android:layout_height="25.0dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/contact_list_item_name"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="18.0dip"
+        android:layout_toRightOf="@id/icon"
+        android:ellipsize="end"
+        android:gravity="left|center"
+        android:includeFontPadding="false"
+        android:padding="0.0dip"
+        android:singleLine="true"
+        android:textColor="@color/gray"
+        android:textSize="12.0sp" />
+
+</RelativeLayout>

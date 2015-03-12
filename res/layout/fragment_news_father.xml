@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <com.whyp.ycuservice.view.TitleBarView 
+        android:id="@+id/title_bar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <FrameLayout 
+        android:id="@+id/child_fragment"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/title_bar"/>
+    <RelativeLayout
+            android:id="@+id/rl_canvers"
+            android:layout_below="@id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.3"
+            android:visibility="gone"
+            android:focusable="true"
+            android:background="@color/black"/>
+
+</RelativeLayout>
